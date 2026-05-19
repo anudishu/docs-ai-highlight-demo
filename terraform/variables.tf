@@ -1,11 +1,13 @@
+# User values: copy terraform.tfvars.example → terraform.tfvars (and secrets.auto.tfvars).
+
 variable "project_id" {
   type        = string
-  description = "GCP project ID."
+  description = ">>> CHANGE: Your GCP project ID (set in terraform.tfvars)."
 }
 
 variable "region" {
   type        = string
-  description = "Single region for all resources (Mumbai: asia-south1)."
+  description = ">>> CHANGE (optional): Single region for all resources (default Mumbai: asia-south1)."
   default     = "asia-south1"
 }
 
@@ -40,7 +42,7 @@ variable "gemini_model" {
 
 variable "gemini_api_key" {
   type        = string
-  description = "Google AI Studio API key for Gemini chat (stored in Secret Manager). Set via secrets.auto.tfvars."
+  description = ">>> CHANGE: Google AI Studio API key (secrets.auto.tfvars). Leave empty for Vertex-only Gemini."
   default     = ""
   sensitive   = true
 }
