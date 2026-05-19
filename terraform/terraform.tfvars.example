@@ -1,0 +1,9 @@
+project_id                = "your-gcp-project-id"
+region                    = "asia-south1"
+name_prefix               = "docs-highlight"
+manage_project_services   = true
+gemini_model              = "gemini-2.5-flash-lite"
+
+# Copy to secrets.auto.tfvars (gitignored):
+# gemini_api_key = "your-google-ai-studio-api-key"
+allow_unauthenticated_api = true

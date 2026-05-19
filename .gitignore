@@ -1,0 +1,15 @@
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+.terraform.tfvars
+terraform/terraform.tfvars
+terraform/secrets.auto.tfvars
+!terraform/terraform.tfvars.example
+__pycache__/
+*.pyc
+.venv/
+.env
+.DS_Store
+terraform/.build/
+*.pdf
